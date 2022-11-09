@@ -22,8 +22,8 @@
         }
 
         section {
-            background: lightcyan;
-            height: 20vh;
+            /* background: lightcyan; */
+            /* height: 20vh; */
         }
 
         html,
@@ -33,7 +33,7 @@
         }
 
         .wrapper {
-            width: 1024px;
+            /* width: 1024px; */
             display: grid;
             grid-template-rows: 100px auto 300px;
         }
@@ -80,25 +80,79 @@
             margin-right: 10px;
             text-decoration: none;
             font-size: 2.5rem;
-            display: inline-flex ;
+            display: inline-flex;
             justify-content: center;
             align-items: center;
         }
+
+        .ikon {
+            font-size: 2.5rem;
+        }
+
+        .store {
+
+            width: 140px;
+            height: 40px;
+            border: none;
+            border-radius: 40px;
+            color: white;
+            background-color: rgb(83, 82, 82);
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .store1 {
+            text-decoration: none;
+            color: white;
+
+        }
+
         h2 {
             display: none;
         }
 
+        .footer {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            flex: 1;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card {
+            padding-top: 50px;
+            padding-left: 50px;
+            height: 220px;
+            width: 320px;
+            border: 1px solid rgb(222, 221, 221);
+            border-radius: 30px;
+        }
+
+        .text {
+            padding-top: 10px;
+            font-size: 0.7rem;
+            color: darkgray;
+            width: 220px;
+        }
+
         @media (max-width: 768px) {
+
             .icons,
             nav {
                 display: none;
             }
+
             h2 {
                 display: block;
             }
-            
+
+
+
         }
-        
     </style>
 </head>
 
@@ -112,40 +166,105 @@
             <nav class="header__menu">
                 <ul>
                     <li>
-                        <a href="https://google.de">Link 1</a>
+                        <a href="#  ">Home</a>
                     </li>
                     <li>
-                        <a href="">Link 2</a>
+                        <a href="">Feature</a>
                     </li>
                     <li>
-                        <a href="">Link 3</a>
+                        <a href="">Pricing</a>
                     </li>
                     <li>
-                        <a class="button" href="https://google.de" target="blank">Link 4</a>
+                        <a href="">Team</a>
+                    </li>
+                    <li>
+                        <a href="">Question</a>
+                    </li>
+                    <li>
+                        <a class="button" href="https://google.de" target="blank">Get Started</a>
                     </li>
                 </ul>
             </nav>
         </aside>
 
         <main>
-            <h2>
-                TEST
-            </h2>
-            <div class="icons">
+            <h1>
+                Refueling a car at your address
+            </h1>
+            <p>
+                Delivery service for all types of fuel for your car
+            </p>
+            <figure class="img">
+                <img src="https://images.unsplash.com/photo-1644246905181-c3753e9a82bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                    alt="">
+            </figure>
+            <!-- <ul class="store2">
+                <li class="store"> -->
+            <div class="store">
+                <i class="lab la-apple">
+                    <a class="store1" href="">Aple store</a>
+                </i>
+            </div>
+            <!-- </li>
+                <li class="store"> -->
+            <div class="store">
+                <i class="lab la-google-play">
+                    <a class="store1" href="">Google play</a>
+                </i>
+            </div>
+            <!-- </li>
+            </ul> -->
+            <div>
                 <a href="" class="icon">
                     <i class="lab la-instagram"></i>
                 </a>
                 <a href="" class="icon">
-                    <i class="lab la-instagram"></i>
+                    <i class="lab la-facebook"></i>
                 </a>
                 <a href="" class="icon">
-                    <i class="lab la-instagram"></i>
+                    <i class="lab la-twitter"></i>
                 </a>
             </div>
         </main>
-        
 
-        <section></section>
+
+        <section>
+            <footer class="footer">
+                <div class="card">
+                    <p class="ikon">
+                        <i class="las la-clock"></i>
+                    </p>
+                    <p class="text">
+                        Specified order
+                    </p>
+                    <p class="order-text">
+                        Refueling your car at the time and date you specify
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="ikon">
+                        <i class="las la-map-marker"></i>
+                    </p>
+                    <p class="text">
+                        Delivery
+                    </p>
+                    <p class="delivery-text">
+                        Refueling is carried out anywhere in the city
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="ikon">
+                        <i class="las la-credit-card"></i>
+                    </p>
+                    <p class="text">
+                        Payment types
+                    </p>
+                    <p class="pay-text">
+                        Make a payment in any way conveniet for you
+                    </p>
+                </div>
+            </footer>
+        </section>
     </div>
 
 </body>
