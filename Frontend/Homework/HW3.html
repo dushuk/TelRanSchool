@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+        form {
+            text-align: center;
+        }
+
+        .row {
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 2.5rem;
+        }
+        .input {
+            font-size: 1.5rem;
+            padding: .5rem;
+            border-radius: 8px;
+            border: 1 px solid gray;
+        }
+        .button {
+            background: blue;
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+            
+            .SignIn,
+            .banner {
+                flex: 1;
+            }
+            figure,
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            image {
+                object-fit: cover;
+            }
+            figure {
+                line-height: 0;
+            }
+            .SignIn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="SignIn">
+    <form>
+        <h1 class="title">
+            Sign In
+        </h1>
+        <div class="row">
+            <input class="input" type="text" placeholder="uder@example.org">
+        </div>
+        <div class="row">
+            <input class="input" type="password" placeholder="Password">
+        </div>
+        <div class="row">
+            <button class="button">GO!</button>
+        </div>
+    </form>
+</div>
+
+    <div class="banner">
+<figure>
+    <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+</figure>
+    </div>
+</div>
+
+</body>
+
+</html>

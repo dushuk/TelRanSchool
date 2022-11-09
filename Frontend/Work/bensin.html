@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bensin</title>
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            background: lightgray;
+
+        }
+
+        section {
+            background: lightcyan;
+            height: 20vh;
+        }
+
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 1024px;
+            display: grid;
+            grid-template-rows: 100px auto 300px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 40px;
+        }
+
+        .button {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 18px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        .icon {
+            width: 50px;
+            aspect-ratio: 1;
+            color: black;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 2.5rem;
+            display: inline-flex ;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .icons,
+            nav {
+                display: none;
+            }
+            h2 {
+                display: block;
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="header">
+            <figure class="header__figure">
+                <img class="header__image" src="https://via.placeholder.com/150x40" alt="">
+            </figure>
+
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="https://google.de">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="">Link 3</a>
+                    </li>
+                    <li>
+                        <a class="button" href="https://google.de" target="blank">Link 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h2>
+                TEST
+            </h2>
+            <div class="icons">
+                <a href="" class="icon">
+                    <i class="lab la-instagram"></i>
+                </a>
+                <a href="" class="icon">
+                    <i class="lab la-instagram"></i>
+                </a>
+                <a href="" class="icon">
+                    <i class="lab la-instagram"></i>
+                </a>
+            </div>
+        </main>
+        
+
+        <section></section>
+    </div>
+
+</body>
+
+</html>
