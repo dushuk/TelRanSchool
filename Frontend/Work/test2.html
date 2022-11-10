@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html,
+        .wrapper {
+            height: 100%;
+        }
+
+        .header {
+            grid-area: header;
+            background: green;
+        }
+
+        .sildebar {
+            grid-area: sildebar;
+            background: green;
+        }
+
+        .main {
+            grid-area: main;
+            background: green;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: green;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px auto;
+            grid-template-rows: 100px auto 100px;
+            grid-template-areas:
+                "header header"
+                "sildebar main"
+                "footer footer"
+            ;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header"></div>
+        <div class="sildebar"></div>
+        <div class="main"></div>
+        <div class="footer"></div>
+</body>
+
+</html>
