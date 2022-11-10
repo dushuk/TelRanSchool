@@ -50,6 +50,22 @@
             ;
             gap: 10px;
         }
+
+        @media (max-width: 768px) {
+
+            .sildebar {
+                display: none;
+            }
+
+            .wrapper {
+                grid-template-areas:
+                    "header header"
+                    "main main"
+                    "footer footer"
+                ;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 
