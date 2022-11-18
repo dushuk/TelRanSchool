@@ -50,6 +50,8 @@ min-height: 200px;
 width: 30%;
 background-image: url();
 }
-.class {
+
+.service__item service__item--bkg-blue {
     background-image: url();
 }
+
